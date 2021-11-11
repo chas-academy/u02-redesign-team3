@@ -17,6 +17,9 @@ header nav {
       grid-template-columns: 2.5fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
       grid-template-areas: 'search lang' 'nav login';
 }
 
@@ -41,6 +44,13 @@ header nav form {
   grid-area: search;
 }
 
+header nav form input {
+  width: 40%;
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+
 header nav .lang-wrapper {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -54,7 +64,7 @@ header nav .login-link {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: login;
-  font-size: 1.6rem;
+  font-size: 2rem;
   -ms-grid-column-align: end;
       justify-self: end;
 }

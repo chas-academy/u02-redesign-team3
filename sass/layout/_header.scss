@@ -11,6 +11,7 @@ header {
         display: grid;
         grid-template-columns: 2.5fr 1fr;
         grid-template-rows: 1fr 1fr;
+        align-items: center;
         grid-template-areas: 
         'search lang'
         'nav login';
@@ -28,6 +29,13 @@ header {
 
         form {
             grid-area: search;
+
+            input {
+                width: 40%;
+                height: 3rem;
+                padding: 0.5rem;
+                font-size: 1.6rem;
+            }
         }
 
         .lang-wrapper {
@@ -38,7 +46,7 @@ header {
 
         .login-link {
             grid-area: login;
-            font-size: 1.6rem;
+            font-size: 2rem;
             justify-self: end;
         }
     }

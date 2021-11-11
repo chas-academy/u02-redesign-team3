@@ -1,12 +1,77 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-:root {
-    font-size: 10px;
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 4rem;
 }
+
+header img {
+  width: 30%;
+}
+
+header nav {
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5fr 1fr;
+      grid-template-columns: 2.5fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'search lang' 'nav login';
+}
+
+header nav ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0 1rem 0 0;
+}
+
+header nav form {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: search;
+}
+
+header nav .lang-wrapper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: lang;
+  font-size: 1.6rem;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+header nav .login-link {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: login;
+  font-size: 1.6rem;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
 body {
   max-width: 1200px;
+  color: 000000;
 }
 /*# sourceMappingURL=style.css.map */

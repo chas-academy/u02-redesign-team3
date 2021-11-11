@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    padding: 2rem 4rem;
+
+    img {
+        width: 30%;
+    }
+
+    nav {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'search lang'
+        'nav login';
+
+        ul {
+            grid-area: nav;
+            display: flex;
+            font-size: 2rem;
+
+            li {
+                list-style: none;
+                margin: 0 1rem 0 0;
+            }
+        }
+
+        form {
+            grid-area: search;
+        }
+
+        .lang-wrapper {
+            grid-area: lang;
+            font-size: 1.6rem;
+            justify-self: end;
+        }
+
+        .login-link {
+            grid-area: login;
+            font-size: 1.6rem;
+            justify-self: end;
+        }
+    }
+}

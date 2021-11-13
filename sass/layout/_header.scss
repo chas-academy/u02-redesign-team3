@@ -1,37 +1,28 @@
 header {
-    display: flex;
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
 
     img {
-        width: 30%;
+        width: 100%;
     }
 
     nav {
-        width: 70%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 2.5fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr;
         align-items: center;
         grid-template-areas: 
-        'search lang'
-        'nav login';
+        'search login hamburger';
 
         ul {
-            grid-area: nav;
-            display: flex;
-            font-size: 2rem;
-
-            li {
-                list-style: none;
-                margin: 0 1rem 0 0;
-            }
+            display: none;
         }
 
         form {
             grid-area: search;
 
             input {
-                width: 40%;
+                width: 100%;
                 height: 3rem;
                 padding: 0.5rem;
                 font-size: 1.6rem;
@@ -39,15 +30,78 @@ header {
         }
 
         .lang-wrapper {
-            grid-area: lang;
-            font-size: 1.6rem;
-            justify-self: end;
+            display:none;
         }
 
         .login-link {
             grid-area: login;
             font-size: 2rem;
             justify-self: end;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 2rem 4rem;
+        display: flex;
+
+        img {
+            width: 30%;
+        }
+
+        nav {
+            width: 70%;
+            grid-template-columns: 2.5fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            'search lang'
+            'nav login';
+
+            ul {
+                grid-area: nav;
+                display: flex;
+                font-size: 1.8rem;
+    
+                li {
+                    list-style: none;
+                    margin: 0 1rem 0 0;
+                }
+            }
+
+            form {
+
+                input {
+                    width: 40%;
+                }
+            }
+         
+            .lang-wrapper {
+                display: block;
+                grid-area: lang;
+                font-size: 1.6rem;
+                justify-self: end;
+            }
+
+            .login-link {
+                font-size: 1.8rem;
+            }
+        }
+
+        
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        nav {
+            ul {
+                font-size: 2rem;
+            }
+
+            .login-link {
+                font-size: 2rem;
+            }
         }
     }
 }

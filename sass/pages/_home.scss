@@ -1,9 +1,9 @@
-main {
-    padding: 2rem 4rem;
+.index-main {
+    padding: 1rem 2rem;
 
     section {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 5rem;
         margin: 2rem 0;
@@ -28,5 +28,26 @@ main {
             list-style: none;
             font-size: 1.6rem;
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .index-main {
+
+        section {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .index-main {
+        padding: 2rem 4rem;
+
+        section {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+
     }
 }

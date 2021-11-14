@@ -4,7 +4,6 @@ img {
 }
 
 .contact-main {
-  width: auto;
   padding: 2rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,5 +114,6 @@ body {
 
 .contact-form textarea {
   margin: 1rem 0 1.5rem 0;
+  padding: 1rem 0 0 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

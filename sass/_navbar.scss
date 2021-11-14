@@ -1,3 +1,7 @@
+:root {
+  --nav-color: rgb(7, 112, 103);
+  --links-color: white;
+}
 *,
 *::before,
 *::after {
@@ -5,28 +9,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+//------STYLING-----------
 .search-bar {
-  width: 250px;
+  width: 100%;
+  height: 30px;
 }
-main {
-  height: 3000px;
+.login-btn {
+  padding: 0.5em;
 }
 .toggleInput {
+  display: none;
+}
+.language-login {
   display: none;
 }
 img {
   width: 100%;
 }
 .nav-container {
-  background-color: rgb(78, 78, 78);
+  background-color: var(--nav-color);
   display: flex;
   padding: 1em;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+.language {
+  display: none;
 }
 .main-links {
   display: none;
 }
+.open-icon {
+  font-size: 30px;
+  color: white;
+}
+.close-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+//---------DROPDOWN MENU LOGIC-------------
 .dropDownMenu {
   position: absolute;
   width: 100%;
@@ -36,7 +59,6 @@ img {
   margin-top: 15px;
   flex-wrap: wrap;
   padding: 1rem;
-  background-color: blue;
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -48,20 +70,30 @@ img {
 }
 .toggleInput:checked ~ .dropDownMenu {
   left: 0px;
-  background-color: red;
+  background-color: var(--nav-color);
+}
+.toggleInput:checked ~ .open-icon {
+  display: none;
+}
+.toggleInput:checked ~ .close-icon {
+  display: block;
 }
 
-@media screen and (min-width: 800px) {
+//-------MEDIA QUERY------------------
+@media screen and (min-width: 1000px) {
   .main-nav {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
   }
   .search-bar {
-    width: 500px;
+    width: 70%;
   }
   .logo {
     width: 350px;
+  }
+  .toggle {
+    display: flex;
   }
   .nav-container {
     width: 100%;
@@ -73,21 +105,36 @@ img {
     text-decoration: none;
     list-style-type: none;
     li {
-      margin-left: 5em;
+      margin-left: 2em;
+      color: white;
     }
     a {
       text-decoration: none;
       color: white;
     }
   }
+  .login-btn {
+    margin: 0.5em 0 0 4em;
+  }
+  .language {
+    display: flex;
+    a {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    img {
+      width: 25px;
+      margin-left: 1.5em;
+    }
+  }
+  //-----------DROPDOWN MENU--------------
   .dropDownMenu {
     justify-content: center;
     left: 0px;
-    top: -4000px; 
+    top: -4000px;
   }
   .toggleInput:checked ~ .dropDownMenu {
     left: 0px;
-    top: 90px;
-    background-color: red;
+    top: 102px;
   }
 }

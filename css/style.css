@@ -1,5 +1,7 @@
 .index-main {
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
+  background-image: url(/assets/1061.png);
+  background-repeat: repeat;
 }
 
 .index-main section {
@@ -77,7 +79,7 @@
 
 @media (min-width: 1024px) {
   .index-main {
-    padding: 2rem 4rem;
+    padding: 6rem 4rem;
   }
   .index-main section {
     -ms-grid-columns: (1fr)[4];
@@ -100,6 +102,10 @@ header {
   background: #ffffff;
 }
 
+header img {
+  width: 100%;
+}
+
 footer {
   background: #ffffff;
 }
@@ -110,8 +116,6 @@ footer {
 }
 
 body {
-  background-image: url(/assets/1061.png);
-  background-repeat: repeat;
   color: 000000;
 }
 /*# sourceMappingURL=style.css.map */

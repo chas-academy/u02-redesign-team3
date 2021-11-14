@@ -1,7 +1,7 @@
 .index-main {
-    padding: 1rem 2rem;
-    //background-image: url(/assets/1061.png);
-    //background-repeat: repeat;
+    padding: 2rem 4rem;
+    background-image: url(/assets/1061.png);
+    background-repeat: repeat;
 
     section {
         display: grid;
@@ -81,7 +81,7 @@
 
 @media (min-width: 1024px) {
     .index-main {
-        padding: 2rem 4rem;
+        padding: 6rem 4rem;
 
         section {
             grid-template-columns: repeat(4, 1fr);

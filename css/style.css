@@ -1,7 +1,5 @@
 .index-main {
   padding: 1rem 2rem;
-  background-image: url(/assets/1061.png);
-  background-repeat: repeat;
 }
 
 .index-main section {
@@ -75,8 +73,29 @@
   font-size: 10px;
 }
 
+header {
+  background: #ffffff;
+}
+
+footer {
+  background: #ffffff;
+}
+
+.content-wrapper {
+  width: 100%;
+}
+
 body {
-  max-width: 1200px;
+  background-image: url(/assets/1061.png);
+  background-repeat: repeat;
   color: 000000;
+  max-width: 1200px;
+}
+
+@media (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

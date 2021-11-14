@@ -1,5 +1,7 @@
 .index-main {
   padding: 1rem 2rem;
+  background-image: url(/assets/1061.png);
+  background-repeat: repeat;
 }
 
 .index-main section {
@@ -110,8 +112,6 @@ footer {
 }
 
 body {
-  background-image: url(/assets/1061.png);
-  background-repeat: repeat;
   color: 000000;
 }
 /*# sourceMappingURL=style.css.map */

@@ -54,6 +54,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 1rem;
+  background-color: blue;
 }
 
 .dropDownMenu ul {
@@ -108,7 +109,13 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    left: 0px;
+    top: -4000px;
+  }
+  .toggleInput:checked ~ .dropDownMenu {
+    left: 0px;
     top: 90px;
+    background-color: red;
   }
 }
 /*# sourceMappingURL=style.css.map */

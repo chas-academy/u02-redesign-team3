@@ -36,6 +36,7 @@ img {
   margin-top: 15px;
   flex-wrap: wrap;
   padding: 1rem;
+  background-color: blue;
   ul {
     text-decoration: none;
     list-style-type: none;
@@ -81,6 +82,12 @@ img {
   }
   .dropDownMenu {
     justify-content: center;
+    left: 0px;
+    top: -4000px; 
+  }
+  .toggleInput:checked ~ .dropDownMenu {
+    left: 0px;
     top: 90px;
+    background-color: red;
   }
 }

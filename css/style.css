@@ -116,4 +116,18 @@ body {
   margin: 1rem 0 1.5rem 0;
   padding: 1rem 0 0 0.5rem;
 }
+
+article {
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+}
+
+article a {
+  color: black;
+}
+
+article h2 {
+  background: grey;
+  margin: 0 0 1rem 0;
+}
 /*# sourceMappingURL=style.css.map */

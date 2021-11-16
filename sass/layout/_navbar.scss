@@ -1,14 +1,8 @@
 :root {
-  --nav-color: rgb(44, 44, 44);
+  --nav-color: rgb(122, 34, 34);
   --links-color: white;
 }
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 //------STYLING-----------
 .search-bar {
   width: 100%;
@@ -56,7 +50,6 @@ img {
   left: -4000px;
   transition: all 0.2s ease-in-out;
   display: flex;
-  margin-top: 15px;
   flex-wrap: wrap;
   padding: 1rem;
   ul {
@@ -96,6 +89,7 @@ img {
     display: flex;
   }
   .nav-container {
+    position: relative;
     width: 100%;
     margin: auto auto;
   }
@@ -135,6 +129,6 @@ img {
   }
   .toggleInput:checked ~ .dropDownMenu {
     left: 0px;
-    top: 102px;
+    top: 91px;
   }
 }

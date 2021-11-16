@@ -1,6 +1,7 @@
 :root {
-  --nav-color: rgb(122, 34, 34);
+  --nav-color: #182e33;
   --links-color: white;
+  --links-hover:#4ecdc4;
 }
 
 //------STYLING-----------
@@ -29,6 +30,12 @@ img {
 }
 .language {
   display: none;
+  a{
+    color: white;
+  }
+  a:hover{
+    color: var(--links-hover);
+  }
 }
 .main-links {
   display: none;
@@ -37,10 +44,36 @@ img {
   font-size: 30px;
   color: white;
 }
+.open-icon:hover {
+  color: var(--links-hover);
+  cursor: pointer;
+}
 .close-icon {
   display: none;
   font-size: 30px;
   color: white;
+}
+.close-icon:hover {
+  color: var(--links-hover);
+  cursor: pointer;
+}
+.category {
+  li{
+    list-style-type: square;
+    color: white;
+  }
+  li:first-child{
+    font-weight: 600;
+    list-style-type: none;
+  }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover{
+      color:var(--links-hover);
+      text-decoration: underline;
+    }
 }
 
 //---------DROPDOWN MENU LOGIC-------------
@@ -95,17 +128,19 @@ img {
     margin: auto auto;
   }
   .main-links {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: inline-flex;
     text-decoration: none;
     list-style-type: none;
     li {
       margin-left: 2em;
-      color: white;
     }
     a {
       text-decoration: none;
       color: white;
+    }
+    a:hover {
+      color: var(--links-hover);
     }
   }
   .login-btn {

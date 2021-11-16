@@ -41,9 +41,19 @@ section {
           flex-direction: column;
 }
 
+@media screen and (max-width: 700px) {
+  .top-section {
+    padding: 3rem;
+  }
+  .top-section h1 {
+    overflow-wrap: break-word;
+  }
+}
+
 :root {
-  --nav-color: rgb(122, 34, 34);
+  --nav-color: #182e33;
   --links-color: white;
+  --links-hover:#4ecdc4;
 }
 
 .search-bar {
@@ -84,6 +94,14 @@ img {
   display: none;
 }
 
+.language a {
+  color: white;
+}
+
+.language a:hover {
+  color: var(--links-hover);
+}
+
 .main-links {
   display: none;
 }
@@ -93,10 +111,40 @@ img {
   color: white;
 }
 
+.open-icon:hover {
+  color: var(--links-hover);
+  cursor: pointer;
+}
+
 .close-icon {
   display: none;
   font-size: 30px;
   color: white;
+}
+
+.close-icon:hover {
+  color: var(--links-hover);
+  cursor: pointer;
+}
+
+.category li {
+  list-style-type: square;
+  color: white;
+}
+
+.category li:first-child {
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.category a {
+  color: white;
+  text-decoration: none;
+}
+
+.category a:hover {
+  color: var(--links-hover);
+  text-decoration: underline;
 }
 
 .dropDownMenu {
@@ -162,7 +210,7 @@ img {
     margin: auto auto;
   }
   .main-links {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -171,11 +219,13 @@ img {
   }
   .main-links li {
     margin-left: 2em;
-    color: white;
   }
   .main-links a {
     text-decoration: none;
     color: white;
+  }
+  .main-links a:hover {
+    color: var(--links-hover);
   }
   .login-btn {
     margin: 0.5em 0 0 4em;
@@ -367,8 +417,9 @@ article h2 {
 
 .index-main {
   padding: 2rem 4rem;
-  background-image: url(/assets/1061.png);
-  background-repeat: repeat;
+  background-image: url(/assets/pic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .index-main section {

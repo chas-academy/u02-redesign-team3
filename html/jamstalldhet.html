@@ -9,34 +9,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/style.css"/>
   <title>Jämställdhet</title>
+  <script
+      src="https://kit.fontawesome.com/a0408c797a.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 
 <body>
   <header>
-    <img src="../assets/logo.png" alt="logo" height="200" />
-    <!-- temporary height -->
-
-    <nav>
-      <form>
-        <label for="search"></label>
-        <input id="search" type="text" placeholder="Sök" />
-      </form>
-
-      <ul>
-        <li><a href="/html/om_oss.html">Om oss</a></li>
-        <li><a href="#">Konstnärsguiden</a></li>
-        <li><a href="#">Vanliga frågor</a></li>
-        <li><a href="/html/kontakt.html">Kontakt</a></li>
-        <li>Meny</li>
-        <!-- Drop down menu here -->
-      </ul>
-
-      <a href="#"><img src="#" alt="svenska" />Sv</a>
-      <a href="#"><img src="#" alt="english" />En</a>
-
-      <a href="#">Logga in</a>
-    </nav>
-  </header>
+      <nav class="main-nav">
+        <a href="index.html">
+            <img class="logo" src="../assets/logo.png" alt="logo" />
+        </a>
+        <div class="nav-container">
+          <div class="searchBar-links">
+            <form>
+              <label for="search"></label>
+              <input
+                class="search-bar"
+                id="search"
+                type="text"
+                placeholder="Sök"
+              />
+            </form>
+            <ul class="main-links">
+              <li><a href="/html/om_oss.html">Om oss</a></li>
+              <li><a href="#">Konstnärsguiden</a></li>
+              <li><a href="#">Vanliga frågor</a></li>
+              <li><a href="/html/kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+          <label for="toggle" class="toggle">
+            <input class="toggleInput" type="checkbox" id="toggle" />
+            <i class="fas fa-bars open-icon"></i>
+            <div class="close-icon"><i class="fas fa-times "></i></div>
+            <div class="dropDownMenu">
+              <ul class="category1">
+                <li>Om konstnärsnämnden</li>
+                <li><a href="">Regeringsuppdrag</a></li>
+                <li><a href="">Internationellt</a></li>
+                <li><a href="">Jämställdhet</a></li>
+                <li><a href="">Analys och utredning</a></li>
+                <li>
+                  <a href="">Konstnärers ekonomiska </br> & sociala villkor</a>
+                </li>
+              </ul>
+              <ul class="category2">
+                <li>Stipendier & bidrag</li>
+                <li><a href="">Information</a></li>
+                <li><a href="">Musik</a></li>
+                <li><a href="">Dans</a></li>
+                <li><a href="">Teater</a></li>
+                <li><a href="">Bildkonst</a></li>
+                <li><a href="">Film</a></li>
+              </ul>
+              <ul class="category3">
+                <li>Aktuellt</li>
+                <li><a href="">Nyheter</a></li>
+                <li><a href="">Kalendarium</a></li>
+                <li><a href="">Publikationer</a></li>
+                <li><a href="">Kontakt</a></li>
+              </ul>
+              <ul class="category4">
+                <li>Länkar</li>
+                <li><a href="">Andra myndigheter</a></li>
+                <li><a href="">Samarbeten</a></li>
+                <li><a href="">International</a></li>
+              </ul>
+            </div>
+          </label>
+          <div class="login-language"> 
+            <div class="language">
+                <a href="#"><img src="/assets/sweden.png" alt="svenska" />Sv</a>
+                <a href="#"><img src="/assets/great-britain.png" alt="english" />En</a>
+            </div>
+            <button class="login-btn">Login</button>
+          </div>
+        </div>
+      </nav>
+    </header>
 
   <main>
     <ul class="breadcrumbs">

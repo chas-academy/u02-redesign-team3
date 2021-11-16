@@ -1,0 +1,60 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-main {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+
+  h2,
+  h3,
+  h4,
+  p {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  a {
+    color: rgb(3, 65, 65);
+  }
+  a:visited {
+    color: rgb(3, 65, 65);
+  }
+
+  section {
+    margin: 0 0 2rem 0;
+  }
+
+  .direction-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    section {
+      width: 100%;
+      background-color: rgb(216, 215, 215);
+      @media (min-width: 736px) {
+        width: 50%;
+      }
+    }
+
+    &__map {
+      margin: 3vw auto;
+      width: 100%;
+      height: 225;
+    }
+  }
+}
+
+dl {
+  dt {
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+  }
+  dd {
+    margin: 0 0 2rem 0;
+  }
+}

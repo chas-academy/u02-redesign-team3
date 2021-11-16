@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Konstnärsnämndens kontaktuppgifter">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Kontakt</title>
 </head>
 
 <body>
     <header>
-        <img src="../assets/logo.png" alt="logo" height="200"> <!-- temporary height -->
+        <img src="../assets/logo.png" alt="logo"> <!-- temporary height -->
 
         <nav>
 
@@ -21,10 +22,10 @@
             </form>
 
             <ul>
-                <li><a href="html/om_oss.html">Om oss</a></li>
-                <li><a href="html/konstnarsguiden.html">Konstnärsguiden</a></li>
+                <li><a href="/html/om_oss.html">Om oss</a></li>
+                <li><a href="#">Konstnärsguiden</a></li>
                 <li><a href="#">Vanliga frågor</a></li>
-                <li><a href="html/kontakt.html">Kontakt</a></li>
+                <li><a href="/html/kontakt.html">Kontakt</a></li>
                 <li>Meny</li> <!-- Drop down menu here -->
             </ul>
 
@@ -36,11 +37,9 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contact-main">
         <ul class="breadcrumbs">
-            <li>
-                <a href="../index.html">Startsida / </a>
-            </li>
+            <li><a href="/index.html">Startsida </a>/ </li>
             <li>
                 Kontakt
             </li>
@@ -87,18 +86,19 @@
             <a href="mailto:dso@konstnarsnamnden.se">dso@konstnarsnamnden.se</a>
         </section>
 
-        <section>
+        <section class="direction-section">
             <h2>Hitta hit</h2>
             <section>
                 <h3>Kommunalt</h3>
                 <dl>
-                    <dt>Buss:</dt>
+                    <dt>Buss</dt>
                     <dd>Buss 4, hållplats Wollmar Yxkullsgatan.</dd>
 
-                    <dt>Tunnelbana:</dt>
-                    <dd>Röd linje, hållplats Mariatorget, uppgång Torkel Knutssonsgatan. (även T-bana Zinkensdamm)</dd>
+                    <dt>Tunnelbana</dt>
+                    <dd>Röd linje, hållplats Mariatorget, uppgång Torkel Knutssonsgatan.<br>(även T-bana Zinkensdamm)
+                    </dd>
 
-                    <dt>Pendeltåg:</dt>
+                    <dt>Pendeltåg</dt>
                     <dd>Station Stockholms södra, uppgång Rosenlundsgatan.</dd>
                 </dl>
                 <p>För tidtabeller se: <a href="https://sl.se/">SL.se</a></p>
@@ -113,10 +113,10 @@
                 <p>Närmsta parkering finns på Maria skolgata.<br>
                     Närmsta handikapparkering finns på Maria skolgata 46.</p>
             </section>
-            <h3>Karta</h3>
-            <iframe title="Karta via Google Maps"
+
+            <iframe class="direction-section__map" title="Karta via Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2032.1407598076241!2d18.051835398763142!3d59.31484811838478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x465f77e8f243ee4f%3A0xda475e897e70f206!2sKonstn%C3%A4rsn%C3%A4mnden%2C%20Maria%20Skolgata%2083%2C%20118%2053%20Stockholm!3m2!1d59.314835099999996!2d18.0540319!5e0!3m2!1ssv!2sse!4v1636038120228!5m2!1ssv!2sse"
-                width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
         <section>
             <h2>Tillgänglighet</h2>
@@ -129,7 +129,7 @@
         <section>
             <!-- Kontaktformulär -->
             <h2>Kontakta oss</h2>
-            <form name="contact_form">
+            <form class="contact-form" name="contact-form">
                 <label for="first_name">Förnamn</label>
                 <input id="first_name" name="first_name" type="text" placeholder="Förnamn">
                 <label for="last_name">Efternamn</label>
@@ -138,6 +138,7 @@
                 <input id="email" name="email" type="email" placeholder="namn@exempel.se">
                 <label for="message">Meddelande</label>
                 <textarea id="message" name="message" cols="30" rows="10" placeholder="Ditt meddelande..."></textarea>
+                <button type="submit">Skicka</button>
             </form>
         </section>
     </main>

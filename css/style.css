@@ -68,6 +68,7 @@ img {
 }
 
 .dropDownMenu {
+  z-index: 2;
   position: absolute;
   width: 100%;
   left: -4000px;

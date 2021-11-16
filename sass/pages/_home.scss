@@ -1,7 +1,7 @@
 .index-main {
-    padding: 1rem 2rem;
-    //background-image: url(/assets/1061.png);
-    //background-repeat: repeat;
+    padding: 2rem 4rem;
+    background-image: url(/assets/1061.png);
+    background-repeat: repeat;
 
     section {
         display: grid;
@@ -12,6 +12,8 @@
 
         a {
             background: #ffffff;
+            position: relative;
+            border-radius: 0.2rem;
             padding: 1rem;
             height: 30rem;
             color: #000000;
@@ -22,18 +24,40 @@
                 overflow: hidden;
 
                 img {
-                    opacity: 0.7;
                     max-width: 100%;
                 }
             }
 
             h2 {
-                font-size: 2rem;
+                font-size: 2.2rem;
                 margin: 1rem 0;
             }
 
             p {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                border-radius: 0.2rem;
+                top: 0;
+                left: 0;
+                background: #ffffff;
+                width: 100%;
+                height: 50%;
+                opacity: 0;
+                transition: all 0.5s ease 0s;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 0.5;
+                }
+
+                h2, p {
+                    color: #585858;
+                }
             }
         }
     }
@@ -57,7 +81,7 @@
 
 @media (min-width: 1024px) {
     .index-main {
-        padding: 2rem 4rem;
+        padding: 6rem 4rem;
 
         section {
             grid-template-columns: repeat(4, 1fr);

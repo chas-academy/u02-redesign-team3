@@ -311,7 +311,9 @@ article h2 {
 }
 
 .index-main {
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
+  background-image: url(/assets/1061.png);
+  background-repeat: repeat;
 }
 
 .index-main section {
@@ -327,6 +329,8 @@ article h2 {
 
 .index-main section a {
   background: #ffffff;
+  position: relative;
+  border-radius: 0.2rem;
   padding: 1rem;
   height: 30rem;
   color: #000000;
@@ -339,17 +343,38 @@ article h2 {
 }
 
 .index-main section a .index-main__img-wrapper img {
-  opacity: 0.7;
   max-width: 100%;
 }
 
 .index-main section a h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 1rem 0;
 }
 
 .index-main section a p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.index-main section a::after {
+  content: "";
+  position: absolute;
+  border-radius: 0.2rem;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.index-main section a:hover::after {
+  opacity: 0.5;
+}
+
+.index-main section a:hover h2, .index-main section a:hover p {
+  color: #585858;
 }
 
 .index-main ul li {
@@ -366,7 +391,7 @@ article h2 {
 
 @media (min-width: 1024px) {
   .index-main {
-    padding: 2rem 4rem;
+    padding: 6rem 4rem;
   }
   .index-main section {
     -ms-grid-columns: (1fr)[4];

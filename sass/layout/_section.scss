@@ -1,9 +1,14 @@
-.topSection { //all values are just for example. 
-    display: grid;
-    padding: 2rem;
-    margin: 2rem;
-    background-color: bisque;
-    color: rgb(228, 17, 17);
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
+.top-section {
+  //all values are just for example.
+  padding: 2rem;
+  background-color: bisque;
+  color: rgb(228, 17, 17);
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
+}
+section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}

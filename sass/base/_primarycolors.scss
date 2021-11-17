@@ -13,12 +13,11 @@ a:hover {
 
 footer {
   background: var(--nav-color);
-  p {
-    color: white;
-  }
+  p,
   a {
     color: white;
   }
+
   a:hover {
     color: #4ecdc4;
   }

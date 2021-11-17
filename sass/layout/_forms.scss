@@ -1,21 +1,48 @@
 .contact-form {
   width: 100%;
-  background-color: rgb(236, 236, 234);
-  padding: 1.5rem 1rem;
+  max-width: 60rem;
+  margin: 4rem auto;
+  background: #4ecdc4;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
 
   label {
+    font-weight: bold;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   input {
-    margin: 1rem 0 1.5rem 0;
-    padding: 1rem 0 0 0.5rem;
+    background: #4ecdc4;
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    margin: 1rem 0 3rem 0;
+    padding: 2rem 0 0.2rem 2rem;
+    border: none;
+    border-bottom: 2px solid grey;
   }
 
   textarea {
-    margin: 1rem 0 1.5rem 0;
-    padding: 1rem 0 0 0.5rem;
+    color: #fff;
+    background: #4ecdc4;
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    margin: 1rem 0 3rem 0;
+    padding: 2rem 0 0.2rem 2rem;
+    resize: none;
+  }
+
+  button {
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #fff;
+    margin: 1rem auto 3rem;
+    padding: 1.5rem 8rem;
+    background: rgb(24, 46, 51);
+    border: none;
+  }
+  button:hover {
+    background: rgb(24, 46, 51);
   }
 }

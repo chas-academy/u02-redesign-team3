@@ -4,38 +4,43 @@ img {
 }
 
 .contact-main {
-  padding: 2rem 4rem;
-  display: flex;
-  flex-direction: column;
-  background-color: grey;
-
-  h2,
-  h3,
-  h4,
-  p {
-    width: 100%;
-    margin: 1rem 0;
+  .important-notice {
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    background: rgb(167, 62, 62);
+  }
+  .top-section__link {
+    color: rgb(245, 225, 158);
+  }
+  .top-section__link:hover {
+    color: #fff;
   }
 
-  a {
-    color: rgb(3, 65, 65);
-  }
+  a,
   a:visited {
-    color: rgb(3, 65, 65);
+    color: rgb(24, 46, 51);
   }
 
-  section {
-    margin: 0 0 2rem 0;
+  a:hover {
+    color: #4ecdc4;
   }
 
   .direction-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
+
+    h2,
+    h3,
+    h4,
+    p {
+      width: 100%;
+      margin: 1rem 0;
+    }
 
     section {
       width: 100%;
-      background-color: rgb(216, 215, 215);
+
       @media (min-width: 736px) {
         width: 50%;
       }
@@ -44,12 +49,13 @@ img {
     &__map {
       margin: 3vw auto;
       width: 100%;
-      height: 225;
+      height: 250px;
     }
   }
 }
 
 dl {
+  font-size: medium;
   dt {
     font-weight: bold;
     margin: 0 0 1rem 0;

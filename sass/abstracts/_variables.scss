@@ -6,3 +6,14 @@ $fontColorPrimary: $colorBlack;
 $fontColorSecondary: $colorWhite;
 
 $backgroundColor: $colorGrey;
+
+$form-background: #829291;
+$input-background: #1d5551;
+
+:root {
+  --nav-color: #182e33;
+  --links-color: white;
+  --links-hover: #4ecdc4;
+  --form-background: var(--links-hover);
+  --input-background: #d6fffc;
+}

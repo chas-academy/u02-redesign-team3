@@ -1,9 +1,9 @@
 .contact-form {
   width: 100%;
   max-width: 60rem;
-  margin: 4rem auto;
+  margin: 0 auto 4rem;
   background: var(--form-background);
-  padding: 4rem 3rem;
+  padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -14,10 +14,13 @@
     font-size: 2rem;
   }
 
+  // MIXIN FOR THESE //
+
   input {
     background: var(--input-background);
     font-family: "Raleway", sans-serif;
     font-size: medium;
+    font-weight: normal;
     margin: 1rem 0 3rem 0;
     padding: 2rem 0 0.2rem 2rem;
     border: none;
@@ -26,16 +29,19 @@
   }
 
   textarea {
-    color: #000;
     background: var(--input-background);
     font-family: "Raleway", sans-serif;
     font-size: medium;
+    font-weight: normal;
     margin: 1rem 0 3rem 0;
     padding: 2rem 0 0.2rem 2rem;
-    resize: none;
+    border: none;
     border-radius: 5px;
     border-bottom: 2px solid grey;
+    resize: none;
   }
+
+  /////////////////////////////////////
 
   textarea::placeholder {
     color: rgb(75, 74, 74);
@@ -53,7 +59,8 @@
     border: none;
     border-radius: 0.5rem;
   }
-  button:hover {
-    background: #2c555e;
+  button:hover,
+  button:focus {
+    background: #4f7c86;
   }
 }

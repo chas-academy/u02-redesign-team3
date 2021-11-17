@@ -4,16 +4,32 @@ img {
 }
 
 .contact-main {
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  h2,
+  h3,
+  h4,
+  p {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
   .important-notice {
     margin-top: 2rem;
     padding: 2rem 3rem;
-    background: rgb(167, 62, 62);
-  }
-  .top-section__link {
-    color: rgb(245, 225, 158);
-  }
-  .top-section__link:hover {
-    color: #fff;
+    background: rgb(134, 58, 58);
+    border: 4px solid rgb(248, 91, 91);
+
+    a {
+      color: rgb(245, 225, 158);
+    }
+    a:hover {
+      color: #fff;
+    }
   }
 
   a,
@@ -30,14 +46,6 @@ img {
     flex-flow: row wrap;
     justify-content: space-between;
 
-    h2,
-    h3,
-    h4,
-    p {
-      width: 100%;
-      margin: 1rem 0;
-    }
-
     section {
       width: 100%;
 
@@ -47,7 +55,7 @@ img {
     }
 
     &__map {
-      margin: 3vw auto;
+      margin: 2vw auto;
       width: 100%;
       height: 250px;
     }
@@ -62,5 +70,12 @@ dl {
   }
   dd {
     margin: 0 0 2rem 0;
+  }
+}
+
+.contact-us {
+  background: var(--links-color);
+  h2 {
+    text-align: center;
   }
 }

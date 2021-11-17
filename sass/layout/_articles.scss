@@ -1,12 +1,21 @@
+body 
 article {
-  max-width: 500px;
-  margin: 0 auto 2.5rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  }
 
-  a {
-    color: black;
+  a { 
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: var(--links-hover);
   }
   h2 {
-    background: grey;
-    margin: 0 0 1rem 0;
+    background: rgb(24, 46, 51);
+    margin: 0 0 0.5rem 0;
   }
-}
+

@@ -599,7 +599,6 @@ article h2 {
 
 footer {
   padding: 1rem 2rem;
-  background: #182e33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,18 +610,15 @@ footer {
 
 footer div {
   margin: 1rem 0;
-}
-
-footer div p {
-  color: white;
-}
-
-footer div a {
-  color: white;
-}
-
-footer div a:hover {
-  color: #4ecdc4;
+  /*p {
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    a:hover {
+      color: #4ecdc4;
+    }*/
 }
 
 @media (min-width: 768px) {
@@ -643,5 +639,32 @@ footer div a:hover {
   --links-hover: #4ecdc4;
   --form-background: #fff;
   --input-background: rgb(233, 239, 240);
+}
+
+/* Nav-bar */
+/* Main content */
+a {
+  color: var(--nav-color);
+}
+
+a:hover {
+  color: var(--links-hover);
+}
+
+/* Footer */
+footer {
+  background: var(--nav-color);
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #4ecdc4;
 }
 /*# sourceMappingURL=style.css.map */

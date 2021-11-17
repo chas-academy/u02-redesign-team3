@@ -8,10 +8,7 @@
     <meta name="description" content="Konstnärsnämndens kontaktuppgifter">
     <link rel="stylesheet" href="/css/style.css">
     <title>Kontakt</title>
-    <script
-      src="https://kit.fontawesome.com/a0408c797a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a0408c797a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -80,10 +77,7 @@
                 <a href="#"><img src="/assets/sweden.png" alt="svenska" />Sv</a>
                 <a href="#"><img src="/assets/great-britain.png" alt="english" />En</a>
             </div>
-            <button class="login-btn">Login</button>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
 
     <main class="contact-main">
@@ -96,15 +90,18 @@
         <section class="top-section">
             <h1>Kontakt</h1>
 
-            <p><strong>Konstnärsnämnden har för närvarande stängt för besök.<br>
-                    Detta med anledning av den mycket förhöjda risken för smittspridning av Corona-viruset.
-                    Vi hoppas ni har överseende med de eventuella besvär detta kan orsaka.</strong></p>
-            <p>Du når myndigheten mellan kl 09.30 - 15.00.<br>
-                Telefonväxel: <a href="tel:+46850655000">08 - 506 550 00</a><br>
-                E-post: <a href="mailto:info@konstnarsnamnden.se">info@konstnarsnamnden.se</a></p>
+            <div class="important-notice">
+                <p><strong>Konstnärsnämnden har för närvarande stängt för besök.<br>
+                        Detta med anledning av den mycket förhöjda risken för smittspridning av Corona-viruset.<br>
+                        Vi hoppas ni har överseende med de eventuella besvär detta kan orsaka.</strong></p>
+                <p>Du når myndigheten mellan kl 09.30 - 15.00.<br>
+                    Telefonväxel: <a href="tel:+46850655000">08 - 506 550 00</a><br>
+                    E-post: <a href="mailto:info@konstnarsnamnden.se">info@konstnarsnamnden.se</a>
+                </p>
 
-            <p><strong>Observera: Under sommaren har vi begränsad bemanning och avvikande öppettider: kl
-                    09.30-12.00.</strong></p>
+                <p><strong>Observera: Under sommaren har vi begränsad bemanning och avvikande öppettider: kl
+                        09.30-12.00.</strong></p>
+            </div>
         </section>
         <section>
             <h2>Besöksadress</h2>
@@ -175,24 +172,27 @@
                 Om du behöver särskild hjälp med något, tala gärna om det i förväg så kan vi ge dig bättre service.
             </p>
         </section>
-        <section>
+        <section class="contact-us">
             <!-- Kontaktformulär -->
+
             <h2>Kontakta oss</h2>
+
             <form class="contact-form" name="contact-form">
                 <label for="first_name">Förnamn</label>
-                <input id="first_name" name="first_name" type="text" placeholder="Förnamn">
+                <input id="first_name" name="first_name" type="text">
                 <label for="last_name">Efternamn</label>
-                <input id="last_name" name="last_name" type="text" placeholder="Efternamn">
+                <input id="last_name" name="last_name" type="text">
                 <label for="email">E-post</label>
-                <input id="email" name="email" type="email" placeholder="namn@exempel.se">
+                <input id="email" name="email" type="email">
                 <label for="message">Meddelande</label>
                 <textarea id="message" name="message" cols="30" rows="10" placeholder="Ditt meddelande..."></textarea>
                 <button type="submit">Skicka</button>
             </form>
+
         </section>
     </main>
 
-     <footer>
+    <footer>
         <div>
             <p>
                 <a href="#">Om webbplatsen</a>
@@ -202,7 +202,7 @@
             </p>
         </div>
         <div>
-            <p>Konstnärsnämden</p> 
+            <p>Konstnärsnämden</p>
             <p>Maria skolgata 83, 2 tr</p>
             <p>118 53 Stockholm</p>
         </div>

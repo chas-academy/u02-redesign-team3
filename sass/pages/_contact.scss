@@ -4,57 +4,78 @@ img {
 }
 
 .contact-main {
-  padding: 2rem 4rem;
-  display: flex;
-  flex-direction: column;
-  background-color: grey;
-
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
   h2,
   h3,
   h4,
   p {
     width: 100%;
-    margin: 1rem 0;
-  }
-
-  a {
-    color: rgb(3, 65, 65);
-  }
-  a:visited {
-    color: rgb(3, 65, 65);
-  }
-
-  section {
     margin: 0 0 2rem 0;
+  }
+
+  .important-notice {
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    background: rgb(134, 58, 58);
+    border: 4px solid rgb(248, 91, 91);
+
+    a {
+      color: rgb(245, 225, 158);
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+
+  a,
+  a:visited {
+    color: rgb(24, 46, 51);
+  }
+
+  a:hover {
+    color: #4ecdc4;
   }
 
   .direction-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
 
     section {
       width: 100%;
-      background-color: rgb(216, 215, 215);
+
       @media (min-width: 736px) {
         width: 50%;
       }
     }
 
     &__map {
-      margin: 3vw auto;
+      margin: 2vw auto;
       width: 100%;
-      height: 225;
+      height: 250px;
     }
   }
 }
 
 dl {
+  font-size: medium;
   dt {
     font-weight: bold;
     margin: 0 0 1rem 0;
   }
   dd {
     margin: 0 0 2rem 0;
+  }
+}
+
+.contact-us {
+  background: var(--links-color);
+  h2 {
+    text-align: center;
   }
 }

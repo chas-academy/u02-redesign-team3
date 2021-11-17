@@ -50,12 +50,11 @@ section {
   }
 }
 
-:root {
+/*:root {
   --nav-color: #182e33;
   --links-color: white;
   --links-hover:#4ecdc4;
-}
-
+}*/
 .search-bar {
   width: 100%;
   height: 30px;
@@ -261,16 +260,12 @@ img {
   height: auto;
 }
 
-.contact-main {
-  padding: 2rem 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: grey;
+.contact-main h3 {
+  font-size: 2rem;
+}
+
+.contact-main h4 {
+  font-size: 1.6rem;
 }
 
 .contact-main h2,
@@ -278,27 +273,41 @@ img {
 .contact-main h4,
 .contact-main p {
   width: 100%;
-  margin: 1rem 0;
-}
-
-.contact-main a {
-  color: #034141;
-}
-
-.contact-main a:visited {
-  color: #034141;
-}
-
-.contact-main section {
   margin: 0 0 2rem 0;
+}
+
+.contact-main .important-notice {
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+  background: #863a3a;
+  border: 4px solid #f85b5b;
+}
+
+.contact-main .important-notice a {
+  color: #f5e19e;
+}
+
+.contact-main .important-notice a:hover {
+  color: #fff;
+}
+
+.contact-main a,
+.contact-main a:visited {
+  color: #182e33;
+}
+
+.contact-main a:hover {
+  color: #4ecdc4;
 }
 
 .contact-main .direction-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -306,7 +315,6 @@ img {
 
 .contact-main .direction-section section {
   width: 100%;
-  background-color: #d8d7d7;
 }
 
 @media (min-width: 736px) {
@@ -316,9 +324,13 @@ img {
 }
 
 .contact-main .direction-section__map {
-  margin: 3vw auto;
+  margin: 2vw auto;
   width: 100%;
-  height: 225;
+  height: 250px;
+}
+
+dl {
+  font-size: medium;
 }
 
 dl dt {
@@ -328,6 +340,14 @@ dl dt {
 
 dl dd {
   margin: 0 0 2rem 0;
+}
+
+.contact-us {
+  background: var(--links-color);
+}
+
+.contact-us h2 {
+  text-align: center;
 }
 
 * {
@@ -375,8 +395,10 @@ li {
 
 .contact-form {
   width: 100%;
-  background-color: #ececea;
-  padding: 1.5rem 1rem;
+  max-width: 60rem;
+  margin: 0 auto 4rem;
+  background: var(--form-background);
+  padding: 4rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,21 +406,75 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 10px;
 }
 
 .contact-form label {
+  font-weight: bold;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .contact-form input {
-  margin: 1rem 0 1.5rem 0;
-  padding: 1rem 0 0 0.5rem;
+  background: var(--input-background);
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  font-weight: normal;
+  margin: 1rem 0 3rem 0;
+  padding: 2rem 0 0.2rem 2rem;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid grey;
 }
 
 .contact-form textarea {
-  margin: 1rem 0 1.5rem 0;
-  padding: 1rem 0 0 0.5rem;
+  background: var(--input-background);
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  font-weight: normal;
+  margin: 1rem 0 3rem 0;
+  padding: 2rem 0 0.2rem 2rem;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid grey;
+  resize: none;
+}
+
+.contact-form textarea::-webkit-input-placeholder {
+  color: #4b4a4a;
+  font-weight: bold;
+}
+
+.contact-form textarea:-ms-input-placeholder {
+  color: #4b4a4a;
+  font-weight: bold;
+}
+
+.contact-form textarea::-ms-input-placeholder {
+  color: #4b4a4a;
+  font-weight: bold;
+}
+
+.contact-form textarea::placeholder {
+  color: #4b4a4a;
+  font-weight: bold;
+}
+
+.contact-form button {
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #fff;
+  margin: 2rem auto;
+  padding: 2rem 8rem;
+  background: var(--nav-color);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+  background: #4f7c86;
 }
 
 article {
@@ -545,5 +621,13 @@ footer div a:hover {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+}
+
+:root {
+  --nav-color: #182e33;
+  --links-color: white;
+  --links-hover: #4ecdc4;
+  --form-background: #fff;
+  --input-background: rgb(233, 239, 240);
 }
 /*# sourceMappingURL=style.css.map */

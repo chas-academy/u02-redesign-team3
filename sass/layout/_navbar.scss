@@ -1,8 +1,8 @@
-:root {
+/*:root {
   --nav-color: #182e33;
   --links-color: white;
   --links-hover:#4ecdc4;
-}
+}*/
 
 //------STYLING-----------
 .search-bar {
@@ -30,10 +30,10 @@ img {
 }
 .language {
   display: none;
-  a{
+  a {
     color: white;
   }
-  a:hover{
+  a:hover {
     color: var(--links-hover);
   }
 }
@@ -58,22 +58,22 @@ img {
   cursor: pointer;
 }
 .category {
-  li{
+  li {
     list-style-type: square;
     color: white;
   }
-  li:first-child{
+  li:first-child {
     font-weight: 600;
     list-style-type: none;
   }
-    a {
-      color: white;
-      text-decoration: none;
-    }
-    a:hover{
-      color:var(--links-hover);
-      text-decoration: underline;
-    }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--links-hover);
+    text-decoration: underline;
+  }
 }
 
 //---------DROPDOWN MENU LOGIC-------------

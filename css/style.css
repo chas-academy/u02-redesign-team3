@@ -42,11 +42,6 @@ section {
   }
 }
 
-/*:root {
-  --nav-color: #182e33;
-  --links-color: white;
-  --links-hover:#4ecdc4;
-}*/
 .search-bar {
   width: 100%;
   height: 30px;
@@ -617,15 +612,6 @@ footer {
 
 footer div {
   margin: 1rem 0;
-  /*p {
-      color: white;
-    }
-    a {
-      color: white;
-    }
-    a:hover {
-      color: #4ecdc4;
-    }*/
 }
 
 @media (min-width: 768px) {
@@ -665,10 +651,6 @@ footer {
 
 footer p,
 footer a {
-  color: white;
-}
-
-footer a:hover {
-  color: #4ecdc4;
+  color: var(--links-color);
 }
 /*# sourceMappingURL=style.css.map */

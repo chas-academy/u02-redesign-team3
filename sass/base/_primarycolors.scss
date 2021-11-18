@@ -15,10 +15,6 @@ footer {
   background: var(--nav-color);
   p,
   a {
-    color: white;
-  }
-
-  a:hover {
-    color: #4ecdc4;
+    color: var(--links-color);
   }
 }

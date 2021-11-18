@@ -77,13 +77,13 @@ img {
   width: 100%;
   left: -4000px;
   transition: all 0.2s ease-in-out;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   padding: 1rem;
   ul {
     text-decoration: none;
     list-style-type: none;
-    margin: 0 auto;
+    margin-bottom: 4rem;
   }
   li {
     margin-bottom: 1.2rem;
@@ -153,6 +153,7 @@ img {
   }
   //-----------DROPDOWN MENU--------------
   .dropDownMenu {
+    display: flex;
     justify-content: center;
     left: 0px;
     top: -4000px;

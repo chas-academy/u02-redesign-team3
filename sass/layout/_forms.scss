@@ -9,18 +9,13 @@
   border-radius: 10px;
 
   label {
-    font-weight: bold;
     width: 100%;
-    font-size: 2rem;
   }
 
-  // MIXIN FOR THESE //
+  // MIXIN FOR THESE? //
 
   input {
     background: var(--input-background);
-    font-family: "Raleway", sans-serif;
-    font-size: medium;
-    font-weight: normal;
     margin: 1rem 0 3rem 0;
     padding: 2rem 0 0.2rem 2rem;
     border: none;
@@ -30,9 +25,6 @@
 
   textarea {
     background: var(--input-background);
-    font-family: "Raleway", sans-serif;
-    font-size: medium;
-    font-weight: normal;
     margin: 1rem 0 3rem 0;
     padding: 2rem 0 0.2rem 2rem;
     border: none;
@@ -43,16 +35,7 @@
 
   /////////////////////////////////////
 
-  textarea::placeholder {
-    color: rgb(75, 74, 74);
-    font-weight: bold;
-  }
-
   button {
-    font-family: "Raleway", sans-serif;
-    font-size: large;
-    font-weight: bold;
-    color: #fff;
     margin: 2rem auto;
     padding: 2rem 8rem;
     background: var(--nav-color);

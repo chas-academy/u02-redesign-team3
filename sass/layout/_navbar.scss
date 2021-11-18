@@ -119,11 +119,11 @@ img {
   .nav-container {
     position: relative;
     width: 100%;
-    margin: auto auto;
   }
   .main-links {
     margin-top: 1.5rem;
-    display: inline-flex;
+    display: flex;
+    justify-content: left;
     text-decoration: none;
     list-style-type: none;
     li {
@@ -159,6 +159,6 @@ img {
   }
   .toggleInput:checked ~ .dropDownMenu {
     left: 0px;
-    top: 91px;
+    top: 135px;
   }
 }

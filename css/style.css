@@ -14,7 +14,7 @@
   padding: 9rem;
   color: white;
   text-align: left;
-  background-image: url(/assets/pic1.jpg);
+  background-image: url(/assets/wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -516,7 +516,7 @@ article h2 {
 
 .index-main {
   padding: 2rem 4rem;
-  background-image: url(/assets/pic1.jpg);
+  background-image: url(/assets/wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

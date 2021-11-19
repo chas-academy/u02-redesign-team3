@@ -23,7 +23,6 @@ img {
 }
 
 .nav-container {
-  background-color: var(--nav-color);
   display: flex;
   padding: 1em;
   justify-content: space-around;
@@ -32,14 +31,6 @@ img {
 
 .language {
   display: none;
-
-  a {
-    color: white;
-  }
-
-  a:hover {
-    color: var(--links-hover);
-  }
 }
 
 .main-links {
@@ -52,29 +43,24 @@ img {
 
 .open-icon {
   font-size: 30px;
-  color: white;
 }
 
 .open-icon:hover {
-  color: var(--links-hover);
   cursor: pointer;
 }
 
 .close-icon {
   display: none;
   font-size: 30px;
-  color: white;
 }
 
 .close-icon:hover {
-  color: var(--links-hover);
   cursor: pointer;
 }
 
 .category {
   li {
     list-style-type: square;
-    color: white;
   }
 
   li:first-child {
@@ -83,12 +69,10 @@ img {
   }
 
   a {
-    color: white;
     text-decoration: none;
   }
 
   a:hover {
-    color: var(--links-hover);
     text-decoration: underline;
   }
 }
@@ -176,11 +160,6 @@ img {
 
     a {
       text-decoration: none;
-      color: white;
-    }
-
-    a:hover {
-      color: var(--links-hover);
     }
   }
 

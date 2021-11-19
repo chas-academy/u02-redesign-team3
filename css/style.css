@@ -558,6 +558,7 @@ article h2 {
   color: #000000;
   max-width: 400px;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 .index-main section a .index-main__img-wrapper {
@@ -569,12 +570,13 @@ article h2 {
 }
 
 .index-main section a h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin: 1rem 0;
+  text-decoration: underline;
 }
 
 .index-main section a p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .index-main section a::after {

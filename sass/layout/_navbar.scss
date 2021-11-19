@@ -123,7 +123,17 @@ img {
   .nav-container {
     position: relative;
     width: 100%;
+    align-items: flex-end;
+    padding: 2.5rem 1rem; 
   }
+
+  .login-language, .searchBar-links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .main-links {
     margin-top: 1.5rem;
     display: flex;

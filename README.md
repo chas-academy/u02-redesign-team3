@@ -7,6 +7,12 @@ Sandra Wallén, Licia Thörn, Elinor Kramming, Amanda Wrede, Ricardo Castelbon, 
 The project is built as the second assignment in the course HTML & CSS at Chas Academy.
 The main purpose is to remake Konstnärsnämndens website.
 
+During the interviews at the start of this project we found that the users main pain points were that the original
+page was difficult to navigate and there was too much information being displayed at once.
+
+The design we created was made with the intention of simplifying the navigation, gathering the most important and
+interesting links in one place and minimizing the amount of text displayed at once on every page.
+
 ## Work process
 
 The project was built in 6 sprints. The first sprint included interviews.
@@ -65,5 +71,7 @@ During the project we have partly worked seperately and used Git and GitHub for 
 At certain points we have had team coding sessions where we have all worked together using mob programing.
 These commits were made direcly in main and merged during the session.
 
-Merged "Om Konstnärsnämnden" and "Regeringsuppdrag" because of similar content.
-Integrated the right side menu into main menu and index.html clickable card navigation.
+All links that were in the original left side menu have working links to related pages.
+Original pages "Om Konstnärsnämnden" and "Regeringsuppdrag" were merged because of similar content.
+
+We integrated the right side menu into main menu and index.html clickable card navigation.

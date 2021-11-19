@@ -33,6 +33,10 @@ img {
 }
 .main-links {
   display: none;
+
+  li {
+    margin-left: 0;
+  }
 }
 .open-icon {
   font-size: 30px;
@@ -127,7 +131,7 @@ img {
     text-decoration: none;
     list-style-type: none;
     li {
-      margin-left: 2em;
+      margin-right: 3rem;
     }
     a {
       text-decoration: none;

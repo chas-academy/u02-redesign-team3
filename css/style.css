@@ -96,6 +96,10 @@ img {
   display: none;
 }
 
+.main-links li {
+  margin-left: 0;
+}
+
 .open-icon {
   font-size: 30px;
   color: white;
@@ -208,7 +212,7 @@ img {
     list-style-type: none;
   }
   .main-links li {
-    margin-left: 2em;
+    margin-right: 3rem;
   }
   .main-links a {
     text-decoration: none;

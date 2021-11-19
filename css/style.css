@@ -15,7 +15,7 @@
   padding: 3rem;
   color: white;
   text-align: left;
-  background-image: url(/assets/wallpaper.avif);
+  background-image: url(/assets/wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -74,7 +74,6 @@ img {
 }
 
 .nav-container {
-  background-color: var(--nav-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,14 +89,6 @@ img {
   display: none;
 }
 
-.language a {
-  color: white;
-}
-
-.language a:hover {
-  color: var(--links-hover);
-}
-
 .main-links {
   display: none;
 }
@@ -108,28 +99,23 @@ img {
 
 .open-icon {
   font-size: 30px;
-  color: white;
 }
 
 .open-icon:hover {
-  color: var(--links-hover);
   cursor: pointer;
 }
 
 .close-icon {
   display: none;
   font-size: 30px;
-  color: white;
 }
 
 .close-icon:hover {
-  color: var(--links-hover);
   cursor: pointer;
 }
 
 .category li {
   list-style-type: square;
-  color: white;
 }
 
 .category li:first-child {
@@ -138,12 +124,10 @@ img {
 }
 
 .category a {
-  color: white;
   text-decoration: none;
 }
 
 .category a:hover {
-  color: var(--links-hover);
   text-decoration: underline;
 }
 
@@ -240,10 +224,6 @@ img {
   }
   .main-links a {
     text-decoration: none;
-    color: white;
-  }
-  .main-links a:hover {
-    color: var(--links-hover);
   }
   .login-btn {
     margin: 0.5em 0 0 4em;
@@ -533,7 +513,7 @@ article h3 {
 
 .index-main {
   padding: 2rem 4rem;
-  background-image: url(/assets/wallpaper.avif);
+  background-image: url(/assets/wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -654,7 +634,30 @@ footer div {
   --input-background: rgb(233, 239, 240);
 }
 
-/* Nav-bar */
+/* Nav and footer*/
+footer,
+.nav-container {
+  background: var(--nav-color);
+}
+
+footer p,
+footer a,
+footer li,
+footer i,
+.nav-container p,
+.nav-container a,
+.nav-container li,
+.nav-container i {
+  color: var(--links-color);
+}
+
+footer i:hover,
+footer a:hover,
+.nav-container i:hover,
+.nav-container a:hover {
+  color: var(--links-hover);
+}
+
 /* Main content */
 a {
   color: var(--nav-color);
@@ -662,16 +665,6 @@ a {
 
 a:hover {
   color: var(--links-hover);
-}
-
-/* Footer */
-footer {
-  background: var(--nav-color);
-}
-
-footer p,
-footer a {
-  color: var(--links-color);
 }
 
 .news-main {

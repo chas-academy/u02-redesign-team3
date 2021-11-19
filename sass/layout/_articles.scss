@@ -1,12 +1,11 @@
 article {
-  max-width: 500px;
-  margin: 0 auto 2.5rem;
-
   a {
     color: black;
   }
-  h2 {
-    background: grey;
+
+  h2, h3 {
+    //background: grey;
+    font-size: 2.7rem;
     margin: 0 0 1rem 0;
   }
 }

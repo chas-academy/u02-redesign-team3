@@ -30,6 +30,11 @@ aside{
   padding:2rem;
 }
 
+.publications {
+  margin: 0 auto 2.5rem;
+  max-width: 500px;
+}
+
 @media screen and (min-width: 1024px) {
   .top-section {
     padding: 9rem;
@@ -38,3 +43,4 @@ aside{
     //}
   }
 }
+

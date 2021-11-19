@@ -38,6 +38,11 @@ aside {
   padding: 2rem;
 }
 
+.publications {
+  margin: 0 auto 2.5rem;
+  max-width: 500px;
+}
+
 @media screen and (min-width: 1024px) {
   .top-section {
     padding: 9rem;
@@ -379,6 +384,7 @@ li {
   font-weight: 600;
 }
 
+/* Publications year heading */
 /* Footer */
 footer p {
   color: var(--links-color);
@@ -504,17 +510,12 @@ footer a {
   background: #4f7c86;
 }
 
-article {
-  max-width: 500px;
-  margin: 0 auto 2.5rem;
-}
-
 article a {
   color: black;
 }
 
-article h2 {
-  background: grey;
+article h2, article h3 {
+  font-size: 2.7rem;
   margin: 0 0 1rem 0;
 }
 

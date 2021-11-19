@@ -9,7 +9,6 @@
 }
 
 .top-section {
-  //all values are just for example.
   padding: 3rem;
   color: rgb(255, 255, 255);
   text-align: left;
@@ -28,8 +27,8 @@ section {
   flex-direction: column;
 }
 
-aside{
-  padding:2rem;
+aside {
+  padding: 2rem;
 }
 
 .publications {
@@ -40,9 +39,5 @@ aside{
 @media screen and (min-width: 1024px) {
   .top-section {
     padding: 9rem;
-    //h1 {
-      //overflow-wrap: break-word;
-    //}
   }
 }
-

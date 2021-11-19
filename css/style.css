@@ -210,7 +210,8 @@ img {
             align-items: flex-end;
     padding: 2.5rem 1rem;
   }
-  .login-language, .searchBar-links {
+  .login-language,
+  .searchBar-links {
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -399,13 +400,11 @@ li {
           margin-inline-start: 3rem;
 }
 
-/* Navbar and footer links */
 /* Top-section */
 .top-section p {
   font-weight: 600;
 }
 
-/* Publications year heading */
 /* Footer */
 footer p {
   color: var(--links-color);
@@ -495,7 +494,8 @@ footer p {
   width: 100%;
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
   background: var(--input-background);
   margin: 1rem 0 3rem 0;
   padding: 2rem 0 0.2rem 2rem;
@@ -505,12 +505,6 @@ footer p {
 }
 
 .contact-form textarea {
-  background: var(--input-background);
-  margin: 1rem 0 3rem 0;
-  padding: 2rem 0 0.2rem 2rem;
-  border: none;
-  border-radius: 5px;
-  border-bottom: 2px solid grey;
   resize: none;
 }
 
@@ -528,10 +522,11 @@ footer p {
 }
 
 article a {
-  color: black;
+  color: #000;
 }
 
-article h2, article h3 {
+article h2,
+article h3 {
   font-size: 2.7rem;
   margin: 0 0 1rem 0;
 }

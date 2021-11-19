@@ -12,9 +12,8 @@
     width: 100%;
   }
 
-  // MIXIN FOR THESE? //
-
-  input {
+  input,
+  textarea {
     background: var(--input-background);
     margin: 1rem 0 3rem 0;
     padding: 2rem 0 0.2rem 2rem;
@@ -24,16 +23,8 @@
   }
 
   textarea {
-    background: var(--input-background);
-    margin: 1rem 0 3rem 0;
-    padding: 2rem 0 0.2rem 2rem;
-    border: none;
-    border-radius: 5px;
-    border-bottom: 2px solid grey;
     resize: none;
   }
-
-  /////////////////////////////////////
 
   button {
     margin: 2rem auto;
@@ -42,6 +33,7 @@
     border: none;
     border-radius: 0.5rem;
   }
+
   button:hover,
   button:focus {
     background: #4f7c86;

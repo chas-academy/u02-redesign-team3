@@ -14,7 +14,7 @@ html {
 
 h1 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 5rem;
+  font-size: 2.8rem;
 }
 h2 {
   font-size: 2.7rem;
@@ -113,5 +113,11 @@ footer {
   textarea::placeholder {
     color: rgb(75, 74, 74);
     font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
   }
 }

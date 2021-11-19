@@ -4,10 +4,11 @@
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  margin: 2rem;
 }
 
 .breadcrumbs li {
-  margin: 0 0.5rem 1.5rem 0;
+  margin: 0;
 }
 
 .top-section {
@@ -55,7 +56,9 @@ aside {
 }
 
 .login-btn {
-  padding: 0.5em;
+  padding: 0.3em;
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .toggleInput {
@@ -202,6 +205,23 @@ img {
   .nav-container {
     position: relative;
     width: 100%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 2.5rem 1rem;
+  }
+  .login-language, .searchBar-links {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .main-links {
     margin-top: 1.5rem;
@@ -395,10 +415,6 @@ footer p {
   margin-bottom: 1rem;
 }
 
-footer a {
-  text-decoration: none;
-}
-
 /* Contact */
 .contact-main dl {
   font-size: medium;
@@ -550,6 +566,7 @@ article h2, article h3 {
   color: #000000;
   max-width: 400px;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 .index-main section a .index-main__img-wrapper {
@@ -561,12 +578,13 @@ article h2, article h3 {
 }
 
 .index-main section a h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin: 1rem 0;
+  text-decoration: underline;
 }
 
 .index-main section a p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .index-main section a::after {
@@ -577,7 +595,7 @@ article h2, article h3 {
   left: 0;
   background: #ffffff;
   width: 100%;
-  height: 50%;
+  height: 100%;
   opacity: 0;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -585,10 +603,6 @@ article h2, article h3 {
 
 .index-main section a:hover::after {
   opacity: 0.5;
-}
-
-.index-main section a:hover h2, .index-main section a:hover p {
-  color: #585858;
 }
 
 .index-main ul li {
